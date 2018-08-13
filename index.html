@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Playing With CSS Variables</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="console.emoji.js"></script>
+</head>
+<body>
+    <h2>Update CSS variables with<span class="hl"> JS</span></h2>
+
+    <div class="fun">Rotate Me</div>
+    <br>
+
+    <div class="controls">
+        <label for="spacing">Spacing</label>
+        <input type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+        <label for="blur">Blur</label>
+        <input type="range" name="blur" min="0" max="25" value="5" data-sizing="px">
+
+        <label for="base">Base Color</label>
+        <input type="color" name="base" value="#ffc600">
+
+        <label for="bodybase">Background Color</label>
+        <input type="color" name="bodybase" value="#ffc600">
+
+
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=18d906af00043c013eef7ed6812c4f01&auto=format&fit=crop&w=1950&q=80" alt="New York Image">
+    
+    <script src="app.js"></script>
+
+</body>
+</html>

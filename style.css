@@ -1,0 +1,66 @@
+:root {
+    --base: #ffc600;
+    --bodybase : red;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+    height: 600px;
+    width: 800px;
+    /* transform: rotate(30deg); */
+}
+
+
+
+body {
+    text-align: center;
+
+    background: var(--bodybase);
+    color: while;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.controls {
+    margin-bottom: 50px;
+}
+
+input {
+    width: 100px;
+}
+
+.hl {
+    font-size: 40px;
+    color: var(--base);
+    /* filter: drop-shadow(var(--blur)); */
+    transition: font-size 3s, transform 3s;
+}
+
+.hl:hover {
+    transform: rotate(50deg);
+    font-size: 70px;
+}
+
+.fun {
+    display: flex;
+    position: relative;
+    left: 50%;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    transform: rotate3d(20deg, 30deg, 30deg);
+    background: #fff;
+    font-stretch: condensed;
+    font-size: 3vh;
+    transition: width 3s, transform 3s;
+}
+
+.fun:hover {
+    transform: rotate3d(360deg, 360deg, 360deg);
+    width: 200px;
+}
