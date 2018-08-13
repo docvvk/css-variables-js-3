@@ -53,7 +53,7 @@ input {
     text-align: center;
     width: 100px;
     height: 100px;
-    transform: rotate3d(20deg, 30deg, 30deg);
+    transform: rotate(20deg);
     background: #fff;
     font-stretch: condensed;
     font-size: 3vh;
@@ -61,6 +61,6 @@ input {
 }
 
 .fun:hover {
-    transform: rotate3d(360deg, 360deg, 360deg);
+    transform: rotate(360deg);
     width: 200px;
 }
